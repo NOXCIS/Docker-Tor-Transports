@@ -17,11 +17,11 @@ RUN set -ex && cd /tmp && \
     popd && \
     rm -rf /go /tmp/* && \
     echo "DONE LYREBIRD AKA OBFS4" 
-RUN git clone https://git.torproject.org/pluggable-transports/snowflake.git \
+RUN git clone --depth=1 https://git.torproject.org/pluggable-transports/snowflake.git \
     && cd snowflake/client \
     && CGO_ENABLED=0 go build -a -installsuffix cgo \
     && echo "DONE SNOWFLAKE"
-RUN git clone https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/webtunnel.git \
+RUN git clone --depth=1 https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/webtunnel.git \
     && cd webtunnel/main/client \
     && CGO_ENABLED=0 go build -a -installsuffix cgo \
     && echo "DONE WEBTUNNEL" 
