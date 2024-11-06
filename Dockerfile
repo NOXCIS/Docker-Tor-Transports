@@ -1,4 +1,4 @@
-# pluggables: Tor Transport Plugin Binary Builder
+# compiler: Tor Transport Plugin Binary Builder
 FROM  golang:alpine3.20 AS compiler
 WORKDIR /
 RUN apk add -U --no-cache bash make git
