@@ -1,5 +1,5 @@
 # pluggables: Tor Transport Plugin Binary Builder
-FROM  golang:alpine3.20 AS pluggables
+FROM  golang:alpine3.20
 ARG LYREBIRD_VERSION=0.2.0
 WORKDIR /
 
