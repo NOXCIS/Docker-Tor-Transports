@@ -29,6 +29,7 @@ RUN chmod +x /lyrebird/lyrebird /webtunnel/main/client/client /snowflake/client/
 
 # Final stage
 FROM scratch
+LABEL maintainer="NOXCIS"
 COPY --from=compiler /lyrebird/lyrebird /lyrebird
 COPY --from=compiler /webtunnel/main/client/client /webtunnel
 COPY --from=compiler /snowflake/client/client /snowflake
