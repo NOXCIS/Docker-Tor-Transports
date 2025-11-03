@@ -1,5 +1,5 @@
 # compiler: Tor Transport Plugin Binary Builder
-FROM golang:1.23.3-alpine3.20@sha256:c694a4d291a13a9f9d94933395673494fc2cc9d4777b85df3a7e70b3492d3574 AS compiler
+FROM golang:alpine3.22@sha256:aee43c3ccbf24fdffb7295693b6e33b21e01baec1b2a55acc351fde345e9ec34 AS compiler
 WORKDIR /
 RUN apk add -U --no-cache bash make git upx
 
